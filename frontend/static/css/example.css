@@ -1,0 +1,26 @@
+#example-panel .example-container {
+  display: block;
+  margin: 0vw 0vw;
+  width: 100%;
+  padding: .6vw 1vw;
+  font-size: 1vw;
+  color: #ddd;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  word-wrap: break-word;      /* IE 5.5-7 */
+}
+.examples-container {
+  background-color: #333;
+  border-radius: .5vw;
+  overflow: hidden;
+}
+#example-panel .example-container:hover {
+  color: #333;
+  background-color: #ddd;
+}

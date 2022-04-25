@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVColor</title>
+    <!-- icon library -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- ColorPicker -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/>  <!-- 'monolith' theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/>  <!-- 'nano' theme -->
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+
+    <!-- Load Vega-lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    {% load static %}
+    
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dashboard.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/colorscheme.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dataset.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/example.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/setting.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/loader.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/manual-coloring.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/react-grid-layout.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/react-resizable.css' %}"/>
+    
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/javascript" src="{% static 'main.js' %}"></script> 
+</body>
+</html>

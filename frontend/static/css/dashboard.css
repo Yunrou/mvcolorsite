@@ -1,0 +1,65 @@
+/* Assign grid instructions to our parent grid container */
+#dashboard .main {
+  background-color: #333;
+  padding: .5vw;
+  overflow-y: hidden;
+  height: calc(100vh - 4vw);
+}
+/* Main */
+.card {
+  height: 100%;
+  background-color: white;
+  border-radius: .3vw;
+}
+
+.card-header {
+  display: block;
+  width: 100%; height: 2.1vw;
+}
+.card-title {
+  width: 100%;
+  padding: .5vw 0 .2vw .5vw;
+  font-size: .8vw;
+  font-weight: 700;
+  float: left;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.card-control-container {
+  float: right;
+  display: inline-block;
+  width: 2.5vw; height: 2.5vw;
+  text-align: center;
+}
+
+.card-control {
+  float: right;
+  min-width: 2.5vw; height: 2.5vw;
+  margin: 0;
+  top: 0; left: 2;
+  color: #ddd; 
+  background-color: none;
+  text-decoration: none;
+  font-size: 1.5vw;
+  text-align: center;
+  border: none; /* Remove borders */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+.card-control:hover {
+  color: #333;
+}
+
+/* Chart  */
+.chart-container {
+  display: block;
+  margin: 0 .3vw 0 0;
+}
+
+.card-main {
+  width: 100%; height: calc(100% - 3vw);
+  text-align: center;
+  overflow: hidden;
+  /*padding: 10px;*/
+}

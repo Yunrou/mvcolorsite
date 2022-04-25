@@ -1,0 +1,31 @@
+input[type="file"] {
+  display: none;
+}
+
+#dataset-panel .dataset-control-container {
+  width: 93%; height: 23px;
+  padding: 2px;
+  text-align: right;
+}
+
+.dataset-control {
+  float: left;
+  display: block;
+  width: 20px; height: 20px;
+  margin: 2px; padding: 0px;
+  z-index: 4;
+  color: #777; 
+  background-color: white;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  border: none; /* Remove borders */
+  border-radius: 3px;
+  cursor: pointer; /* Mouse pointer on hover */
+}
+.dataset-control:hover {
+  color: #333;
+}
+.dataset-control .fa {
+  top: -4px;
+}

@@ -1,0 +1,173 @@
+.color-settings-container {
+  padding: .75vw 1vw 1vw 1vw;
+  background-color: #333;
+  border-radius: .5vw;
+}
+#colorpalette {
+  -moz-appearance: none; 
+  -webkit-appearance: none; 
+  appearance: none;
+  /* and then whatever styles you want*/
+  width: 100%; height: 2.3vw;
+  padding: .5vw .5vw;
+  border: solid 1px #888;
+  border-radius: .3vw;
+  font-size: 1vw;
+  color: #ddd;
+  background-color: #333; 
+}
+
+.colorconfig-container {
+  margin: 0 .3vw;
+  width: 100%; height: 2.1vw;
+}
+.colorconfig-name {
+  display: inline-block;
+  width: 6.3vw;
+  text-align: left;
+  top: -.4vw;
+  font-size: 1vw;
+}
+#bgcolor-picker, #textcolor-picker {
+  display: inline-block;
+  height: 1.5vw;
+}
+.set-colorconfig {
+  display: inline-block;;
+  width: 4vw; height: 1.3vw;
+  border: solid 1px #888;
+  border-radius: .3vw;
+  text-align: right;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.color-control-container {
+  height: 2.5vw;
+  padding: .1vw .2vw;
+}
+.color-control {
+  float: left;
+  display: block;
+  width: 1.4vw; height: 1.4vw;
+  margin: 0vw 0vw 0vw 0vw; 
+  padding: .19vw;
+  z-index: 4;
+  text-decoration: none;
+  font-size: 1.25vw;
+  text-align: center;
+  border: none; /* Remove borders */
+  border-radius: .3vw;
+  cursor: pointer; /* Mouse pointer on hover */
+}
+.color-picker {
+  margin-left: 0vw;
+}
+.color-control.text {
+  width: 2.6vw;
+  top: .3vw;
+  font-size: .9vw;
+}
+.color-control:hover {
+  color: cadetblue;
+}
+.save-colors-modal {
+  float: right;
+  position: absolute;
+  padding: .5vw .5vw !important; 
+  top: 2.5vw; left: 0;
+  z-index: 4;
+  width: 10vw;
+  height: auto;
+  visibility: hidden;
+
+  font-size: .9vw;
+  color: #ddd;
+  background-color: #151515;
+  border-radius: .3vw;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.save-colors-modal input {
+  display: inline-block;
+  font-size: 1vw;
+  width: 6vw; height: 1.3vw;
+  border: solid 1px #888;
+  border-radius: .3vw;
+  color: #ddd;
+  background-color: #151515;
+}
+.save-colors-modal label {
+  display: inline-block;
+  margin-right: .5vw;
+}
+.save-colors-modal button {
+  visibility: hidden;
+  width: 0; height: 0;
+  padding: 0;
+}
+.save-colors-modal.in {
+  visibility: visible;
+}
+/* The container */
+#color-panel .color-container {
+  padding: .4vw;
+  border-radius: .3vw;
+  background-color: #fff;
+}
+.color-box-container {
+  display: inline-block;
+  /*position: relative;*/
+  width: 1.5vw; height: 1.5vw;
+  margin: .25vw;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.color-box-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0; height: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  display: inline-block;
+  width: 1.5vw; height: 1.5vw;
+  border-radius: .3vw;
+}
+
+/* When the checkbox is checked, add a blue background */
+.color-box-container input:checked ~ .checkmark {
+  /*background-color: cadetblue !important; */
+  /*border: solid 1px black;*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.color-box-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.color-box-container .checkmark:after {
+  left: .45vw; top: .2vw;
+  width: .4vw; height: .65vw;
+  border: solid white;
+  border-width: 0 .2vw .2vw 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
